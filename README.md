@@ -13,6 +13,6 @@
 
 - スケジュール
 - [企画書](https://docs.google.com/document/d/1LFa_Ux8PbEcI2raAzAoMy6upnTCqoVh2wW3cfRVHxpQ/edit)
-- [仕様書 or 外部設計書](https://docs.google.com/spreadsheets/d/1EUaRgVaM1-wiPhoYavt4qf4v3g0KY_t42QXEQMq_Bk8/edit#gid=0)
+- [仕様書 or 外部設計書](https://docs.google.com/spreadsheets/d/1JMDzhJms39xVFTCXtpn1K4tmBnB9egmg5uP3naW7KQ4/edit#gid=0)
 - ソース
 - プレゼンテーション
