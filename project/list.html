@@ -1,29 +1,115 @@
 <!doctype html>
 <html lang="ja">
 <head>
+
 <meta charset="UTF-8">
-<title>登録リスト</title>
+<title>チャンネルリスト</title>
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="css/list.css">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<SCRIPT language="JavaScript">
-<!--
-function OpenWin(){
-win=window.open("window.html","new","width=450,height=450");
-win.moveTo(50,50);
-}
-// -->
-</SCRIPT>
+
 </head>
  
 <body>
-  <h1>リスト</h1>
 
-<FORM>
-<INPUT type="button" value="追加" onClick="OpenWin()">
-</FORM>
-</CENTER>
+<h1>チャンネルリスト</h1>
+
+<!-- テキストボックスでの追加 -->
+<form name="chfm">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname1" value="チャンネル名を入力">
+<input type="text" id="url1" value="チャンネルIDを入力">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname2" value="チャンネル名を入力">
+<input type="text" id="url2" value="チャンネルIDを入力">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname3" value="チャンネル名を入力">
+<input type="text"id="url3" value="チャンネルIDを入力">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname4" value="チャンネル名を入力">
+<input type="text" id="url4" value="チャンネルIDを入力">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname5" value="チャンネル名を入力">
+<input type="text" id="url5" value="チャンネルIDを入力">
+
+<p>チャンネル名＆URL：</p>
+<input type="text" id="CHname6" value="チャンネル名を入力">
+<input type="text" id="url6" value="チャンネルIDを入力">
+
+</form>
+
+<!-- 保存＆読み込みボタン -->
+<button type="button" id="savebtn" onclick="saveDate()">保存</button>
+<!-- <input type="button" id="load" onclick="loodDate()"  value="読み込み"> -->
+
+<SCRIPT>
+
+if (window.lovalstorage) {
+// 保存ボタンをクリックした時の処理
+// ストレージに保存＆呼び出し
+function saveDate() {
+		var str1 = document.getElementById('CHname1');
+		var str2 = document.getElementById.('url1');
+		var str3 = document.getElementById.('CHname2');
+		var str4 = document.getElementById.('url2');
+		var str5 = document.getElementById.('CHname3');
+		var str6 = document.getElementById.('url3');
+		var str7 = document.getElementById.('CHname4');
+		var str8 = document.getElementById.('url4');
+		var str9 = document.getElementById.('CHname5');
+		var str10 = document.getElementById.('url5');
+		var str11 = document.getElementById.('CHname6');
+		var str12 = document.getElementById.('url6');
+
+		var value1 = str1.innerText;
+		var value2 = str2.innerText;
+		var value3 = str3.innerText;
+		var value4 = str4.innerText;
+		var value5 = str5.innerText;
+		var value6 = str6.innerText;
+		var value7 = str7.innerText;
+		var value8 = str8.innerText;
+		var value9 = str9.innerText;
+		var value10 = str10.innerText;
+		var value11 = str11.innerText;
+		var value12 = str12.innerText;
+		
+// storageに保存
+		localStrage.setItem('test1', value1);
+		localStrage.setItem('test2', value2);
+		localStrage.setItem('test3', value3);
+		localStrage.setItem('test4', value4);
+		localStrage.setItem('test5', value5);
+		localStrage.setItem('test6', value6);
+		localStrage.setItem('test7', value7);
+		localStrage.setItem('test8', value8);
+		localStrage.setItem('test9', value9);
+		localStrage.setItem('test10', value10);
+		localStrage.setItem('test11', value11);
+		localStrage.setItem('test12', value12);
+
+		//alert("保存しました");
+
+	        //storageから読み込み
+		var txt1 = localStrage.getItem('test1');
+		var txt2 = localStrage.getItem('test2');
+		var txt3 = localStrage.getItem('test3');
+		var txt4 = localStrage.getItem('test4');
+		var txt5 = localStrage.getItem('test5');
+		var txt6 = localStrage.getItem('test6');
+		var txt7 = localStrage.getItem('test7');
+		var txt8 = localStrage.getItem('test8');
+		var txt9 = localStrage.getItem('test9');
+		var txt10 = localStrage.getItem('test10');
+		var txt11 = localStrage.getItem('test11');
+		var txt12 = localStrage.getItem('test12');
+        }
+}
+</SCRIPT>
 
 </body>
 </html>
